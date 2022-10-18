@@ -1,0 +1,25 @@
+[
+  {
+      "id": 1,
+    "img": "https://cdn.pixabay.com/photo/2016/09/16/12/53/hotel-1673952_960_720.jpg",
+    "name": "Hoteles"
+  },
+
+  {
+    "id": 2,
+    "img": "https://cdn.pixabay.com/photo/2016/10/13/09/06/travel-1737168__340.jpg",
+    "name": "Hostels"
+  },
+
+  {
+    "id": 3,
+    "img": "https://cdn.pixabay.com/photo/2016/11/14/02/28/apartment-1822409__340.jpg",
+    "name": "Departamentos"
+  },
+
+  {
+    "id": 4,
+    "img": "https://cdn.pixabay.com/photo/2016/12/11/18/10/apartment-1899964__340.jpg",
+    "name": "Bed and Breakfast"
+  }
+]

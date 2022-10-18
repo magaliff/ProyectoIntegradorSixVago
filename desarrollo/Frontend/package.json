@@ -1,0 +1,88 @@
+{
+  "name": "webapp",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@mui/material": "^5.8.1",
+    "@react-google-maps/api": "^2.12.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/user-event": "^13.5.0",
+    "formik": "^2.2.9",
+    "google-maps": "^4.3.3",
+    "jwt-decode": "^3.1.2",
+    "leaflet": "^1.8.0",
+    "react": "^18.1.0",
+    "react-calendar": "^3.7.0",
+    "react-dom": "^18.1.0",
+    "react-geocode": "^0.2.3",
+    "react-image-gallery": "^1.2.8",
+    "react-leaflet": "^4.0.1",
+    "react-multi-date-picker": "^3.3.0",
+    "react-paginate": "^8.1.3",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "react-select": "^5.4.0",
+    "react-simple-share": "^0.1.2",
+    "react-tooltip": "^4.2.21",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "CI=false && react-scripts build",
+    "test": "react-scripts test --watchAll=false --coverage",
+    "eject": "react-scripts eject"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/*/*.{jsx,js}",
+      "src/*/*/*.{jsx,js}",
+      "src/*/*/*/*.{jsx,js}",
+      "!src/components/header/UserWelcome.js",
+      "!src/components/auth/ProtectedRoute.js",
+      "!src/components/headerProducto/*.{jsx,js}",
+      "!src/components/product/*.{jsx,js}",
+      "!src/components/heading/*.{jsx,js}",
+      "!src/components/calendarAvailableDay/*.{jsx,js}",
+      "!src/components/imageGallery/*.{jsx,js}",
+      "!src/components/administracion/*.{jsx,js}",
+      "!src/components/favorito/*.{jsx,js}",
+      "!src/components/stars/*.{jsx,js}",
+      "!src/components/misReservas/*.{jsx,js}",
+      "!src/components/pagination/*.{jsx,js}",
+      "!src/pages/*.{jsx,js}",
+      "!src/utils/*.{jsx,js}",
+      "!src/index.js",
+      "!src/components/booking_form/*.{jsx,js}",
+      "!src/components/calendar/*.{jsx,js}",
+      "!src/components/buscador/*.{jsx,js}",
+      "!src/components/cards/*.{jsx,js}",
+      "!src/components/body/*.{jsx,js}",
+      "!src/reportWebVitals.js",
+      "!src/setupTests.js"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/react": "^13.3.0"
+  }
+}

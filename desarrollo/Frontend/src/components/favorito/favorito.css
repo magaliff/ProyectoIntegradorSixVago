@@ -1,0 +1,9 @@
+.btn_favorito{
+display: inline;
+}
+.btn_favorito .btn_favorito-icon{
+    cursor: pointer;
+    color: #d22809;
+    margin-left: 10px;
+    margin-top: 10px;
+}

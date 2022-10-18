@@ -1,0 +1,62 @@
+.user-loggedIn-main-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.user-avatar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 47px;
+  height: 47px;
+  margin-right: 10px;
+  background:linear-gradient(90deg, rgba(203,178,106,1) 10%, rgba(255,245,218,1) 50%, rgba(190,158,68,1) 110%);
+  border-radius: 50%;
+  font-family: "Quicksand";
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: #262626;
+}
+.user-welcome-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 47px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+  color: wheat;
+}
+.user-welcome-username{
+  color: White;
+}
+.user-logout-container {
+  position: absolute;
+  top: -20%;
+  right: 0;
+  cursor: pointer;
+}
+@media (max-width: 578px){
+  .user-welcome-normal{
+    display: none;
+  }
+  .user-welcome-media .user-logout-container {
+    display: none;
+  }
+  .user-welcome-media .user-loggedIn-main-container{
+    flex-direction:column;
+    align-items: flex-end;
+  }
+  .user-welcome-media .user-welcome-container{
+    margin: 5px 15px 5px 15px;
+    text-align: end;
+    line-height: 20px;
+  }
+  .user-welcome-media .user-welcome-username p{
+    color: rgb(255, 255, 255);
+  }
+}

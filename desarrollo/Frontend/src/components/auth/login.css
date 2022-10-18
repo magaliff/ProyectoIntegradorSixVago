@@ -1,0 +1,89 @@
+.login-container {
+  top: 86px;
+  height: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  -webkit-transition: 0.5s;
+  position: fixed;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.login-container.show {
+  top: initial;
+  height: 100%;
+  -webkit-transition: height 1s ease-in-out;
+}
+
+.formulario-login {
+  padding: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formulario-login h1 {
+  color: #262626;
+  padding: 0px 0px 20px 0px;
+  font-size:24px;
+}
+.formulario-login input {
+  background: #ffffff;
+  border-color: white;
+  border-style: inherit;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  font-size: 15px;
+  padding-left: 20px;
+}
+.formulario-login i{
+  margin-left: -30px;
+  cursor: pointer;
+  font-size: 15px;
+  color: rgba(153, 153, 153, 0.253);
+}
+.formulario-login i:hover{
+  color: rgba(0, 0, 0, 0.555);
+}
+#eyes-input{
+  padding: 0px;
+}
+.formulario-login label {
+  font-size: 13px;
+  font-weight: 600;
+}
+#boton-login {
+  width: 206px;
+  height: 40px;
+  background: linear-gradient(90deg, rgba(203,178,106,1) 10%, rgba(255,245,218,1) 50%, rgba(190,158,68,1) 110%);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  border-color: wheat;
+  border-style: inherit;
+  color: #262626;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#boton-login:hover {
+  background: linear-gradient(90deg, rgb(158, 139, 82) 10%, rgba(255,245,218,1) 50%, rgb(148, 122, 53) 110%);
+  color: #262626;
+}
+.redireccionLogin{
+  color: rgb(158, 139, 82);
+  cursor: pointer;
+}
+.formulario-login p {
+  padding: 15px;
+  font-size: 13px;
+}
+@media screen and (max-width: 578px){
+  .formulario-login{
+    width: 550px;
+  }
+  #boton-login{
+    width: 300px;
+    height: 40px;
+  }
+}

@@ -1,0 +1,135 @@
+.sidebar{
+    position: fixed;
+    background-color: white;
+    width: 303px;
+    height: 100vh;
+    right: 0;
+    z-index: 5;
+    right: -600px;
+    transition: 0.5s;
+    display: none;
+}
+.sidebar.active{
+    right: 0px;
+    transition: 1s;
+    display: none;
+} 
+.sidebar-header{
+    height: 25%;
+    width: 303px;
+    background-color:#262626;
+    color:wheat;
+    display:flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    border-bottom: 2px solid wheat;
+}
+.exit{
+    height: 10%;
+    background: linear-gradient(90deg, rgba(203,178,106,1) 10%, rgba(255,245,218,1) 50%, rgba(190,158,68,1) 110%);
+}
+.exit i{
+    font-size: 30px;
+    color: white;
+    margin: 20px 30px;
+    cursor: pointer;
+}
+.sidebar-header h3{
+    margin-right: 20px;
+    font-size: 20px;
+}
+.sidebar-body{
+    color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 57.7%;
+    background-color: #262626;
+}
+.sidebar-body li{
+    margin:30px 0px;
+    cursor: pointer;
+}
+.sidebar-body a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    font-weight: bold;
+    pointer-events: none;
+}
+.slidebar-body span{
+    pointer-events: none;
+}
+.boton-iniciar{
+    color: wheat;
+}
+.boton-crear{
+    color:wheat;
+}
+.sidebar-body hr{
+    width: 220px;
+    border-color: wheat;
+}
+.sidebar-footer{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 10%;
+    background: linear-gradient(90deg, rgba(203,178,106,1) 10%, rgba(255,245,218,1) 50%, rgba(190,158,68,1) 110%);
+}
+.sidebar-footer i {
+    padding: 15px 8px;
+    font-size: 23px;
+    color: #545776;
+}
+.exit-sesion{
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    align-items: flex-end;
+    color: wheat;
+}
+.exit-sesion span{
+    padding: 0px 4px 0px 4px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 600;
+}
+.sidebar-mis-reservas {
+    padding-top: 20px;
+  cursor: pointer;
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  color: #c9b26d;
+}
+.sidebar-administracion {
+  cursor: pointer;
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  color: #c9b26d;
+}
+.sidebar-administracion:hover {
+  text-shadow: #c9b26db2 0px 0px 10px;
+}
+@media (max-width: 578px){
+    .sidebar{
+        position: fixed;
+        background-color: white;
+        width: 303px;
+        height: 100%;
+        z-index: 5;
+        right:-600px;
+        transition: 0.5s;
+        display: block;
+    }
+    .sidebar.active{
+        right: 0px;
+        transition: 1s;
+        display:block;
+    }
+}
